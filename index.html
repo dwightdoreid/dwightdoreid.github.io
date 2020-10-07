@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>        
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3"> 
+            <a class="navbar-brand" href="#" onclick="showHome()">
+                <img src="https://images.getbento.com/accounts/7f9f93ed05a7c603485ca9aed8c49ccf/media/images/63421Black-Rustica-Logo.png" alt="Logo" style="width:40px;">
+                Kite Center
+            </a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+            <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
+                <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="showHome()">Home</a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="showAbout()">About us</a> 
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="showProducts()">Products and Services</a> 
+                </li>     
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="showContact()">Contact us</a> 
+                </li>   
+                </ul> 
+            </div>   
+        </nav> 
+        <div id="home" style="display:block;" class="container-fluid p-0">  
+            <div id="title_div" class="w-100 screen_view">
+                <div class="h-auto text-center text-light" id="contact_div">123 Street Rd, Town, Parish  (876) 321-4567</div>
+                <div class="w-100 " style="height:95%;"><img class="image-responsive img_fit" src="https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fpsh-ex-ftnikkei-3937bb4%2Fimages%2F3%2F5%2F1%2F0%2F28010153-4-eng-GB%2FCropped-15936733510716TL1.jpg?source=nar-cms"
+                alt="Chania" width="100%" height="100%"></div>
+            </div> 
+            <div id="tag_line_div" class="screen_view text-center display-4 border_bottom d-flex align-items-center">
+                The Ultimate Kite flying experience in the free world.
+            </div>
+            <div class="container-fluid screen_view">
+                <div class="row info_row">
+                    <div class="col-md-6 mt-5 mb-5 info_col d-flex align-items-center info_text">
+                        At Rustica Lounge Bar & Restaurant, we treat our guests to a unique fine-dining experience where our chef’s flavorful Italian-American dishes are made with fresh, prime-quality and locally sourced ingredients and served in a refined environment dedicated to comfort and entertainment.
+                    </div>
+                    <div class="col-md-6 mt-5 mb-5 p-0 info_col d-flex align-items-center">
+                    <img class = "img_fit" src="https://images.getbento.com/accounts/7f9f93ed05a7c603485ca9aed8c49ccf/media/images/77096interior_1.jpg?fit=max&w=1800&auto=format,compress",
+                     alt="pic 1" width="100%" height="315px"></div>
+                </div>
+            </div>
+            <div class="container-fluid screen_view">
+                <div class="row info_row">
+                    <div class="col-md-6 mt-5 mb-5 p-0 info_col d-flex align-items-center">
+                        <img class = "img_fit" src="https://victorysweetshop.com/wp-content/uploads/2019/03/file-13-2.jpeg",
+                         alt="pic 2" width="100%" height="315px">
+                    </div>
+                    <div class="col-md-6 mt-5 mb-5 info_col d-flex align-items-center info_text">
+                        At Rustica Lounge Bar & Restaurant, we treat our guests to a unique fine-dining experience where our chef’s flavorful Italian-American dishes are made with fresh, prime-quality and locally sourced ingredients and served in a refined environment dedicated to comfort and entertainment.
+                    </div>
+                </div>
+            </div>            
+            <!-- <div id="follow_line_div" class="text-center display-4 border_bottom d-flex align-items-center screen_view">
+                Follow us on social media
+            </div>        
+            <div class="footer">Footer</div> -->
+        </div>
+        <div id="about" class="app_page" style="display:none">
+            <div id="about_img">
+                <div id="about_label" class="h-100 pb-auto text-center text-justify">About us</div>
+            </div>
+            <div class="screen_view">
+                <div class="head_text">Vision</div>
+                <div class="text_1">
+                    Our vision is to create a better everyday life for many people.
+                </div>
+            </div>
+            <div class="screen_view">
+                <div class="head_text">Mission</div>
+                <div class="text_1">
+                    Making a vision statement is a project in itself, and one that should be treated with some weight. A vision statement informs the direction, morale and spirit of the organization: you need it to be inspiring.
+                </div>
+            </div>
+        </div>
+        <div id="products" class="app_page" style="display:none">
+            <div id="about_img">
+                <div id="about_label" class="h-100 pb-auto text-center text-justify">Products and Services</div>
+            </div>
+            <div class="screen_view">
+                <div class="head_text">Vision</div>
+                <div class="text_1">
+                    Our vision is to create a better everyday life for many people.
+                </div>
+            </div>
+            <div class="screen_view">
+                <div class="head_text">Mission</div>
+                <div class="text_1">
+                    Making a vision statement is a project in itself, and one that should be treated with some weight. A vision statement informs the direction, morale and spirit of the organization: you need it to be inspiring.
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="app_page" style="display:none">
+            <div id="about_img">
+                <div id="about_label" class="h-100 pb-auto text-center text-justify">Contact us</div>
+            </div>
+            <div class="screen_view">
+                <div class="head_text">Vision</div>
+                <div class="text_1">
+                    Our vision is to create a better everyday life for many people.
+                </div>
+            </div>
+            <div class="screen_view">
+                <div class="head_text">Mission</div>
+                <div class="text_1">
+                    Making a vision statement is a project in itself, and one that should be treated with some weight. A vision statement informs the direction, morale and spirit of the organization: you need it to be inspiring.
+                </div>
+            </div>
+        </div>
+        <script src="main.js" async defer></script> 
+    </body>
+</html>
