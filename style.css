@@ -41,6 +41,11 @@ body{
     text-align: center;
 }
 
+.contact_method > a{
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
 .contact_method > b{
     font-size: 1.5em;
     margin-left: 20px;
