@@ -204,7 +204,7 @@ body{
 /* Media Queries */
 /* ================================================================================================================ */
 
-@media only screen and (min-width: 380px) {
+@media only screen and (min-width: 480px) {
     .info_row{    
         flex-direction: row;
     }
@@ -219,5 +219,6 @@ body{
     .product_text{
         flex:50%;
         padding-left: 10px;
+        max-width: 40vw;
     }
   }
