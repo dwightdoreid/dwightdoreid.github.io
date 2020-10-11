@@ -209,6 +209,10 @@ body{
         flex-direction: row;
     }
 
+    .product{    
+        flex-direction: row;
+    }
+
     .product_img{
         flex:50%;
         height: auto;
