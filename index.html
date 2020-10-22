@@ -18,12 +18,12 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body onload="showHome()">        
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top py-3"> 
+        <nav class="navbar navbar-expand-md bg-white navbar-white fixed-top py-1"> 
             <a class="navbar-brand" href="#" onclick="showHome()">
-                <img src="https://images.getbento.com/accounts/7f9f93ed05a7c603485ca9aed8c49ccf/media/images/63421Black-Rustica-Logo.png" alt="Logo" style="width:40px;">
-                Kite Center
+                <img src="Logo.jpg" alt="Logo" style="width:70px;">
+                Creative Barbers
             </a> 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
+            <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
                 <span class="navbar-toggler-icon"></span> 
             </button> 
             <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
@@ -43,7 +43,7 @@
                 </ul> 
             </div>   
         </nav> 
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3"> 
+        <nav class="navbar navbar-expand-md bg-white navbar-white py-3"> 
             <a class="navbar-brand" href="#"></a> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> 
                 <span class="navbar-toggler-icon"></span> 
@@ -54,141 +54,156 @@
         <div id="home" style="display:block;" class="flex_container">  
             <div id="title_div">
                 <div id="contact_div">
-                    123 Street Rd, Town, Parish
-                    <a href="tel:(876) 414-4724">(876) 414-4724</a>
+                    Shop 19 Reliance Centre, Mandeville, Manchester
+                    <a href="tel:(876) 414-4724">(876) 871-1447</a>
                 </div>
                 <div class="title_div_img"> 
                     <div>                  
-                        <h1 class="home_title_text home_title_color">Kite Center</h1> 
-                        <h2 class="home_title_color tag_line_text">The Ultimate Kite flying experience in the free world.</h2>
+                        <h1 class="home_title_text home_title_color">Creative Barbers</h1> 
+                        <h2 class="home_title_color tag_line_text">
+                            See the difference, feel the difference
+                        </h2>
                     </div>
                 </div>
             </div>
                 <div class="info_row">
                     <div class="">
-                        <img class = "info_img" src="https://images.getbento.com/accounts/7f9f93ed05a7c603485ca9aed8c49ccf/media/images/77096interior_1.jpg?fit=max&w=1800&auto=format,compress",
-                        alt="pic 1">
+                        <!-- <img class = "info_img" src="info_pic1.jpg" alt="pic 1"> -->
+                        <picture>
+                            <source media="(min-width:650px)" srcset="info_pic1.jpg">
+                            <source media="(min-width:300px)" srcset="info_pic1_sm.jpg">
+                            <img class = "info_img" src="info_pic1.jpg" alt="pic 1">
+                        </picture>
                     </div>
                     <div class="info_text">
-                        At Rustica Lounge Bar & Restaurant, we treat our guests to a unique fine-dining experience where our chef’s flavorful Italian-American dishes are made with fresh, prime-quality and locally sourced ingredients and served in a refined environment dedicated to comfort and entertainment.
+                        At Creative Barbers we offer a variety of hair cuting services for men, women and children.
+ Our barbers firmly believe in the tennets of great customer service, like knowing the names of their customers and remembering their preferences. 
+ We also offer a selection of spa services to add that extra bit to give our customers that fresh and rejuvinated feeling.    
                     </div>
                 </div>           
             <div>
                 <div class="info_row">
                     <div class="">
-                        <img class = "info_img" src="https://images.getbento.com/accounts/7f9f93ed05a7c603485ca9aed8c49ccf/media/images/77096interior_1.jpg?fit=max&w=1800&auto=format,compress",
-                        alt="pic 1">
+                        <picture>
+                            <source media="(min-width:650px)" srcset="info_pic2.jpg">
+                            <source media="(min-width:300px)" srcset="info_pic2_sm.jpg">
+                            <img class = "info_img" src="info_pic2.jpg" alt="pic 2">
+                        </picture>
                     </div>
                     <div class="info_text">
-                        At Rustica Lounge Bar & Restaurant, we treat our guests to a unique fine-dining experience where our chef’s flavorful Italian-American dishes are made with fresh, prime-quality and locally sourced ingredients and served in a refined environment dedicated to comfort and entertainment.
+                        We also belive in supporting the barbering profession and as such we offer a variety of equipment, supplies and services.
+We stock everything from clippers to chairs and hair dryers.
+Our products are available for delivery islandwide so don't hesistate to contact us for all you babering supplies.
                     </div>
                 </div>
             </div>            
         </div>
         <div id="about" style="display:none">
-            <div id="about_img">
+            <div class="about_img">
                 <div id="about_label" class="h-100 pb-auto text-center text-justify">About us</div>
             </div>
             <div class="screen_view">
                 <div class="head_text">Vision</div>
                 <div class="text_1">
-                    To create the best kite flying experience for all.
+                    To be the premier choice for grooming services and supplies in Jamaica.
                 </div>
             </div>
             <div class="screen_view">
                 <div class="head_text">Mission</div>
                 <div class="text_1">
-                    To create the best kites in the world and provide our customers with a world class shopping experience.
+                    Our mission is to create the best grooming and customer service experience for our customers.
                 </div>
             </div>
         </div>
         <div id="products" class="app_page" style="display:none">
-            <div id="about_img">
+            <div class="about_img">
                 <div id="about_label" class="h-100 pb-auto text-center text-justify">Products and Services</div>
             </div>
-            <div class="flex_container"></div>
+            <!-- <div class="flex_container"></div> -->
             <div id="product_1" class="screen_view product">
-                <img class="product_img" src="kites2.png" alt=""> 
+                <picture>
+                    <source media="(min-width:650px)" srcset="prod1.jpg">
+                    <source media="(min-width:300px)" srcset="prod1_sm.jpg">
+                    <img class="product_img" src="prod1.jpg" alt=""> 
+                </picture>  
                 <div class="product_text">
-                    <h1 class="text-center text-justify">Kites</h1>      
+                    <h1 class="text-center text-justify">Haircut</h1>      
                     <ul class="product_list">
-                        <li>Delta Kites</li>
-                        <li>Diamond Kites</li>
-                        <li>Foil Kites</li>
-                        <li>Stunt Kites</li>
-                        <li>Sled Kites</li>
-                        <li>Cellular Kites</li>
+                        <li>Trim and Shave</li>
+                        <li>Mohawk</li>
+                        <li>Patterns</li>
+                        <li>Line-up</li>
+                        <li>Airbrush</li>
                     </ul>  
                 </div>   
             </div>
             <div id="product_2" class="screen_view product">
-                <img class="product_img" src="kite_parts.png" alt=""> 
+                <picture>
+                    <source media="(min-width:650px)" srcset="prod2.jpg">
+                    <source media="(min-width:300px)" srcset="prod2_sm.jpg">
+                    <img class="product_img" src="prod2.jpg" alt=""> 
+                </picture>
                 <div class="product_text">
-                    <h1 class="text-center text-justify">Kite Parts</h1>      
+                    <h1 class="text-center text-justify">Eyebrow</h1>      
                     <ul class="product_list">
-                        <li>Lines</li>
-                        <li>Spools</li>
-                        <li>Tails</li>
-                        <li>Fabrics</li>
+                        <li>Tweezing and Shaping</li>
+                        <li>Tinting</li>
                     </ul>  
                 </div>                
             </div>
             <div id="product_3" class="screen_view product">
-                <img class="product_img" src="kite-lessons.jpg" alt=""> 
+                <picture>
+                    <source media="(min-width:650px)" srcset="prod3.jpg">
+                    <source media="(min-width:300px)" srcset="prod3_sm.jpg">
+                    <img class="product_img" src="prod3.jpg" alt=""> 
+                </picture>
                 <div class="product_text">
-                    <h1 class="text-center text-justify">Kite Flying Lessons</h1>      
+                    <h1 class="text-center text-justify">Barber Supplies</h1>      
                     <ul class="product_list">
-                        <li>Become a kite flying expert in 5 easy lessons.</li>
-                        <li>One on One instruction.</li>
-                        <li>Tails</li>
-                        <li>Fabrics</li>
+                        <li>Clippers, Trimmers, Outliners</li>
+                        <li>Blades</li>
+                        <li>Blade Sharpening Service</li>
+                        <li>Chairs</li>
+                        <li>Aprons</li>
+                        <li>And much more...</li>
                     </ul>  
                 </div>                
             </div>
         </div>
         <div id="contact" class="app_page" style="display:none">
-            <div id="about_img">
+            <div class="about_img">
                 <div id="about_label" class="h-100 pb-auto text-center text-justify">Contact us</div>
             </div>
             <div class="screen_view">
                 <div class="head_text">Our Location</div>
                 <div>
-                    <!-- <iframe  width="auto" height="400" style="margin-left: 0;"frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=18.03844163499552~-77.51789568806998&lvl=13&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
-                    </iframe> -->
                     <div id="location" style="white-space: nowrap; text-align: center; width: 100vw; padding: 6px 0;">
-                        <!-- <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=18.03844163499552~-77.51789568806998&amp;sty=r&amp;lvl=13&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
-                        <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=18.03844163499552~-77.51789568806998&amp;sty=r&amp;lvl=13&amp;rtp=~pos.18.03844163499552_-77.51789568806998____&amp;FORM=MBEDLD">Get Directions</a>&nbsp; | &nbsp; -->
-                        <div style="margin: 10px 0px 10px 0px">
-                            <img class="loc_img" src="map_eg.png" alt="">
+                       <div style="margin: 10px 0px 10px 0px">
+                            <img class="loc_img" src="map_eg.jpg" alt="">
                         </div>
                         <a target="_blank" href="https://www.google.com/maps/@18.0378493,-77.5068457,19.29z">Open in Google Maps</a>
                     </div>
                 </div>
             </div>
             <div id="open_hours">
-                <p><strong>Kite Center Opening Hours:</strong>      </p>          
-                <p>Monday: CLOSED</p>
-                <p>Tuesday – Saturday: 11 am – 9pm</p>
-                <p>Sunday: 11am – 3pm</p>
+                <p><strong>Opening Hours:</strong> </p>          
+                <p>Monday – Saturday: 9am – 9pm</p>
+                <p>Sunday: 10am – 8pm</p>
             </div>
             <div id="contact_info" class="screen_view">
                 <div class="head_text">Talk to Us</div>
                 <div class="contact_method">
                     <i class="fa fa-phone" aria-hidden="true"></i>
-                    <a href="tel:(876) 414-4724">(876) 414-4724</a>
+                    <a href="tel:(876) 871-1447">(876) 871-1447</a>
                 </div>  
                 <div class="contact_method">
                     <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    <a href="https://wa.me/18764144724">(876) 414-4724</a>
-                </div>   
-                <div class="contact_method">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:kites@example.com">kites@example.com</a>
-                </div>          
+                    <a href="https://wa.me/18768711447">(876) 871-1447</a>
+                </div> 
             </div>
         </div>
         <div class="footer">
-            &#169; 2020 Kite Center. All Rights Reserved
+            &#169; 2020 Creative Barbers. All Rights Reserved
           </div>
         <script src="main.js" async defer></script> 
     </body>
