@@ -56,7 +56,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/whatsapp.6cde9381.svg"
   },
   {
-    "revision": "b947bfc20f4291c7bfa84706e4efb47f",
+    "revision": "5685b62de5f44a6f57f35b09d7e1ef02",
     "url": "index.html"
   },
   {
@@ -68,19 +68,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/chunk-vendors.12da9e8b.js"
   },
   {
-    "revision": "1a577588c0704eeb3d0d793eb4aa5753",
+    "revision": "01135a2e6ce225ab18cb1892da4fb808",
     "url": "manifest.json"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "robots.txt"
-  },
-  {
-    "revision": "472a293620b24510bfe99eac76f7b39b",
-    "url": "wid_icon_192x192.png"
-  },
-  {
-    "revision": "5cdde395f691a3e3daac7456bfc2b321",
-    "url": "wid_icon_48x48.png"
   }
 ]);
