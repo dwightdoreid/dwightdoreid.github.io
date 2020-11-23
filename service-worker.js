@@ -1,3 +1,5 @@
+importScripts("precache-manifest.84898787b443d016561ce8ed0a0cd79d.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
 /**
  * Welcome to your Workbox-powered service worker!
  *
@@ -25,6 +27,11 @@ self.addEventListener('message', (event) => {
   }
 });
 
+self.addEventListener('activate', event => {
+  console.log('V1 now ready to handle fetches!');
+});
+
+
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
  * requests for URLs in the manifest.
@@ -32,3 +39,4 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
