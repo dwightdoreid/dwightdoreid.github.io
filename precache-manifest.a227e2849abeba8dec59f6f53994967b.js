@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc5f0d54b242a3009157",
-    "url": "css/app.8d6a39ac.css"
+    "revision": "51442f768da678f52685",
+    "url": "css/app.ea8e8f8f.css"
   },
   {
     "revision": "472a293620b24510bfe99eac76f7b39b",
@@ -16,6 +16,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/atm-24px.7c864aa9.svg"
   },
   {
+    "revision": "4eb00fc0a9852d3b149466c669e40673",
+    "url": "img/barber_shop.4eb00fc0.svg"
+  },
+  {
+    "revision": "d5aedec7a04febdf38c76ba7b0c09017",
+    "url": "img/beauty_salon.d5aedec7.svg"
+  },
+  {
     "revision": "380cc19ceb907f5334c14a8c7a558a09",
     "url": "img/commute-24px.380cc19c.svg"
   },
@@ -28,8 +36,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/hospital-building.1e35e0a0.svg"
   },
   {
+    "revision": "5c4defd9729423c721e6609de7046d95",
+    "url": "img/local_car_wash-24dp.5c4defd9.svg"
+  },
+  {
     "revision": "39ccc58765d433a2c902aed9d5617d41",
     "url": "img/local_gas_station-24px.39ccc587.svg"
+  },
+  {
+    "revision": "6937f1f9b14f34f5ac56940101645a47",
+    "url": "img/mechanic.6937f1f9.svg"
+  },
+  {
+    "revision": "ed5ea37369daedfaa269e779ac84f098",
+    "url": "img/pharmacy.ed5ea373.svg"
   },
   {
     "revision": "c73d19af214c9f8e15d14e719d2416e4",
@@ -56,12 +76,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "img/whatsapp.6cde9381.svg"
   },
   {
-    "revision": "350d2395f82c4973718829a254374d2c",
+    "revision": "0405bcc8e346ff24d52ab0f914e856b3",
     "url": "index.html"
   },
   {
-    "revision": "cc5f0d54b242a3009157",
-    "url": "js/app.44339e39.js"
+    "revision": "51442f768da678f52685",
+    "url": "js/app.386397bd.js"
   },
   {
     "revision": "d1e12bbdc527bd5e78a3",
