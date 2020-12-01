@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/widapp/precache-manifest.a63f204ff52872669bf3628cb76e5a6f.js"
+  "precache-manifest.c14a07b95a3d5b7f6c94878b0d7f76dc.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "wid_rip"});
