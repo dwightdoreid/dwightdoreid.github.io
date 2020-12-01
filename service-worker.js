@@ -1,5 +1,3 @@
-importScripts("precache-manifest.a227e2849abeba8dec59f6f53994967b.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
 /**
  * Welcome to your Workbox-powered service worker!
  *
@@ -15,22 +13,17 @@ importScripts("precache-manifest.a227e2849abeba8dec59f6f53994967b.js", "https://
 
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
-// importScripts(
-//   "precache-manifest.7f9ad02b47dfe362d2470fb0057d3808.js"
-// );
+importScripts(
+  "/widapp/precache-manifest.757caf305e5ad32c820fb618d72945b4.js"
+);
 
-workbox.core.setCacheNameDetails({prefix: "wid"});
+workbox.core.setCacheNameDetails({prefix: "wid_rip"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
   }
 });
-
-self.addEventListener('activate', event => {
-  console.log('V1 now ready to handle fetches!');
-});
-
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
@@ -40,3 +33,4 @@ self.addEventListener('activate', event => {
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("index.html"));
