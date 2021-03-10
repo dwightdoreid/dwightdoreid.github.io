@@ -1,152 +1,246 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    </head>
-    <body>        
-        <nav class="side-navbar"> 
-            <div class="nav_brand" href="#" onclick="showHome()">
-                <img src="images/logo-transparent.png" alt="Logo" style="width:100%;">
-            </div> 
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">  -->
-                <span class="navbar-toggler-icon"></span> 
-            </button> 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
-                <ul class="navbar-nav ml-auto"> 
-                <li class="nav-item"> 
-                    <a class="nav-link" href="#home" data-toggle="collapse" data-target="#collapsibleNavbar" >Home</a> 
-                </li> 
-                <li class="nav-item"> 
-                    <a class="nav-link" href="#about_us" data-toggle="collapse" data-target="#collapsibleNavbar">About us</a> 
-                </li> 
-                <li class="nav-item"> 
-                    <a class="nav-link" href="#services" data-toggle="collapse" data-target="#collapsibleNavbar" >Our Services</a> 
-                </li>     
-                <li class="nav-item"> 
-                    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsibleNavbar">Contact us</a> 
-                </li>   
-                </ul> 
-            </div>   
-        </nav> 
-        <div id="home" style="display:block;" class="app_page container-fluid p-0">  
-            <div id="title_div" class="w3-container  screen_view">
-                <img src="images/group1.jpg" alt="">
-                <div id="brand_div">
-                    <button class="red_block"></button>
-                    <div id="t1" class="w3-animate-top">Ink'D BUSINESS CONSULTING</div>
-                    <div class="t2"><a href="mailto:info@inkdconsulting.com">info@inkdconsulting.com</a></div>
-                    <div class="t2"><a href="tel:+1-876-832-6610">(876) 832-6610</a></div>                    
-                    <!-- <div id="title_contact_btn" >
-                        <a href="#" class="contact_btn">Contact Us</a>
-                    </div> -->
-                </div>                    
-            </div>
-            <div id="about_us" class="screen_view">
-                <div class="info_row">
-                    <div class="section_heading">
-                        <button class="red_block"></button>
-                        <h1>Ink'D Business Consultancy: Expert by Design</h1>
-                    </div>
-                    <div class="t3">Ink'D Business Consultancy is a small but robust consultancy firm based in Kingston, Jamaica</div>
-                    <div class="t3">
-                        We have a passion for assisting small and medium sized companies with achieving the structure and efficiency required to turn the company's vission into stakeholder value.
-                    </div>
-                    <div class="info_col">
-                        <img class="img_fit" src="images/computer_handshake.png",alt="pic 1" width="80%" height="auto">
-                    </div>
-                    <div id="wwd_text" class="info_col">
-                        <h5>
-                            We love making business easier, we want to remove the culture of "outing fires" and replace it with a streamlined, results-drive, value creating machine.
-                        </h5>
-                        <div class="quote_from">
-                             Issaco Mignott
-                             <br>
-                             Director & Logistics Expert
-                        </div>
-                    </div>
+<html lang="en">
+
+<head>
+    <title>GreenCheque</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Collect Payments from Your Customers Online">
+    <meta property="og:title" content="GreenCheque" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.greencheque.com" />
+    <meta property="og:description" content="Collect Payments from Your Customers Online" />
+    <meta property="og:image" content="https://grtechventures.com/wp-content/uploads/2020/06/fast_ca.png" />
+
+    <link rel="icon" href="https://grtechventures.com/wp-content/uploads/2020/06/fast_ca_b.png" type="image/png"
+        sizes="16x16">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white">
+    <nav class="navbar navbar-expand-md bg-success navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://greencheque.com">
+                <img src="GreenCheque Logo.png" alt="" width="40" height="40" class="d-inline-block align-top rounded">
+                GreenCheque
+              </a>
+            <!-- <a class="navbar-brand text-white" style="font-size:150%;" href=https://greencheque.com>GreenCheque</a> -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" style="font-size:120%" href="red_login">Login</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div id="mission" class="screen_view">
-                <div class="info_row">
-                    <div class="section_heading">
-                        <button class="red_block"></button>
-                        <h1>Our Mission and Vision</h1>
-                    </div>
-                    <div class="info_col">
-                        <div class="card">
-                            <div class="container">
-                                <h2 class="card_head">Mission</h2> 
-                                <h5 class="card_txt">To transform our clients' vision into stakeholder value by making it easier for our clients to do business.</h5> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info_col">
-                        <div class="card">
-                            <div class="container">
-                                <h2 class="card_head">Vision</h2> 
-                                <h5 class="card_txt">Get your customized training by consultants that know how to do real work; not just teach theory.</h5>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <div id="services" class="screen_view">
-                <div class="info_row">
-                    <div class="info_col_4">
-                        <div class="card">
-                            <img src="images/tender_service.jpg" alt="Avatar" style="width:100%; height:auto">
-                            <div class="container">
-                                <h5 class="card_txt">Tender and Bid Proposal Services</h5> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info_col_4">
-                        <div class="card">
-                            <img src="images/pm_service.jpg" alt="Avatar" style="width:100%; height:auto">
-                            <div class="container">
-                                <h5 class="card_txt">Business Transformation and Project Management</h5>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info_col_4">
-                        <div class="card">
-                            <img src="images/back_office_service.jpg" alt="Avatar" style="width:100%; height:auto">
-                            <div class="container">
-                                <h5 class="card_txt">Outsourced Back Office Operations</h5>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info_col_4">
-                        <div class="card">
-                            <img src="images/bp_service.jpg" alt="Avatar" style="width:100%; height:auto">
-                            <div class="container">
-                                <h5 class="card_txt">Business Plans and Strategic Document Development</h5>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section_heading">
-                    <button class="red_block"></button>
-                    <h1>Our Services</h1>
-                </div>
-                
-            </div> 
         </div>
-                
-        <script src="main.js" async defer></script> 
-    </body>
+    </nav>
+    <div class="container-fluid">
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    <div class="row mt-5 mb-5">
+        <div class="col-md-6 mb-5 ">
+            <!-- <div class="fs-3 mb-2">Expand the Reach of Your Business</div> -->
+            <div class="fw-bold mb-3 red_s-h">Start Selling Online
+                Today</div>
+            <div class="fs-5 mb-5">Expand the reach of your business to serve far away customers,
+                create and send an invoice then collect payment from
+                your customers wherever they are in the world.
+            </div>
+            <div class="d-grid gap-2">
+                <a href=https://greencheque.com/contact class="btn btn-primary" type="button">Get started for
+                    free</a>
+                <!-- <a href=https://greencheque.com/contact>Get started for free</a> -->
+            </div>
+        </div>
+        <div class="col-md-6 mb-5">
+                <div style="width:30%;" class="mx-auto red_img_shake pt-5">
+                <img src="OnlineShopPhone3.jpg" class="img-fluid mx-auto d-block" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    <div class="row mt-5 mb-5" style="background-color:#ffffff">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100 border-0">
+                <div class="card-img-top">
+                    <img class="mx-auto d-block red_img_pick_shake"
+                        src="https://grtechventures.com/wp-content/uploads/2020/06/lock_b_clipArt.png" alt=""
+                        height="187" width="200">
+                        
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Secured</h4>
+                    <p class="card-text">Built on the platform provided by
+                        the major finacial institutions
+                    </p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <div class="d-grid gap-2">
+                        <a href=https://greencheque.com/contact class="btn btn-primary" type="button">Get started
+                            for
+                            free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100 border-0">
+                <div class="card-img-top" style="overflow:hidden">
+                    <img class="mx-auto d-block red_img_slide" src="https://grtechventures.com/wp-content/uploads/2020/06/fast_ca.png"
+                        alt="" height="187" width="200">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Quick</h4>
+                    <p class="card-text">Recieve payment within
+                        minutes directly to your business account
+                    </p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <div class="d-block d-md-none">
+                        <div class="d-grid gap-2">
+                            <a href=https://greencheque.com/contact class="btn btn-primary" type="button">Get
+                                started for
+                                free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100 border-0">
+                <div class="card-img-top">
+                    <div style="height:187px; width: 200;">
+                        <img class="mx-auto d-block red_img_rotate" src="gear.jpg" alt="" height="90%" width="auto">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Efficient</h4>
+                    <p class="card-text">Built on the platform provided by the major finacial institutions
+                    </p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <div class="d-block d-md-none">
+                        <div class="d-grid gap-2">
+                            <a href=https://greencheque.com/contact class="btn btn-primary" type="button">Get
+                                started
+                                for
+                                free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    <div class="row mb-5 mt-5">
+        <div class="col mt-5 text-center">
+            <h2>Start selling online in three easy steps </h2>
+        </div>
+    </div>
+    <div class="row" style="background-color:ffffff;">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100 border-0">
+                <div class="red_num">1</div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Contact Us</h4>
+                    <p class="card-text">Let us customise our application for you specific needs.
+                    </p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <div class="d-grid gap-2 d-md-none d-md-block">
+                        <a href=https://greencheque.com/contact class="btn btn-primary" type="button">
+                            Get started for free
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100 border-0">
+                <div class="red_num">2</div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Build You Store</h4>
+                    <p class="card-text">Set up your store with your products and everythig that make syou unique.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <div class="d-grid gap-2 d-block d-md-none">
+                        <a href=https://greencheque.com/contact class="btn btn-primary">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100 border-0">
+                <div class="red_num">3</div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">Sell and Collect</h4>
+                    <p class="card-text">Give your customers the flexibility to buy from you whereve they are. With many
+                        ways to collect you will never miss a sale.
+                    </p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <div class="d-grid gap-2 d-block d-md-none">
+                        <a href=https://greencheque.com/contact class="btn btn-primary">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------- -->
+    <div class="row mt-5" style="background-color:eeeeee;">
+        <div class="col-md-6 mb-5">
+            <div class="divdiv">
+                <div class="div_txt">
+                    <h2>There is no limit to your reach</h2>
+                </div>
+                <div style="margin-top: 30px;">
+                    <ul class="list_a">
+                        <li>
+                            <h4>Collect payments without customers coming in</h4>
+                        </li>
+                        <li>
+                            <h4>Collect payments from customers in another parish</h4>
+                        </li>
+                        <li>
+                            <h4>Collect payments from customers around the globe</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-grid gap-2 d-block d-md-none">
+                    <a href=https://greencheque.com/contact class="btn btn-primary">Contact us</a>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <img src="https://cdn.pixabay.com/photo/2016/02/03/03/23/international-space-station-1176518_960_720.jpg"
+                        class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">Copyright 2021 Grassroots Technology Ventures Ltd</div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+</div>
+</body>
+
 </html>

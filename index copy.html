@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GreenCheque</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Collect Payments from Your Customers Online">
+  <meta property="og:title" content="GreenCheque"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.greencheque.com"/>
+  <meta property="og:description" content="Collect Payments from Your Customers Online"/>
+  <meta property="og:image" content="https://grtechventures.com/wp-content/uploads/2020/06/fast_ca.png" />
+
+  <link rel="icon" href="https://grtechventures.com/wp-content/uploads/2020/06/fast_ca_b.png" type="image/png" sizes="16x16"> 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    body {
+        background-color: white;
+      }
+
+    .redCol{
+      /*height: 80vh;*/
+      background:white;
+      border: 0px solid red;
+      /* margin: 2px; */
+    }
+
+    .redInput{
+      display:flex;
+      flex-grow:1;
+}
+    .red-primary{
+      background-color: #49a4d5;
+    } 
+
+    .red-secondary{
+      background-color: white;
+    }
+
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+
+    .red_col {
+            border: 0px solid red;
+            /*height: 95vh;
+            margin-bottom: 0vh;*/
+        }
+
+        .divdiv {
+            border: 0px solid blue;
+            /*margin-top: 10%;
+            height: 85%;*/
+        }
+
+        .div_h1{
+            margin-top: 7%;
+            font-size: 300%;
+            color: #000000;
+        }
+
+        .div_txt {
+            margin-top: 7%;
+        }
+
+        .div_txt2 {
+            margin-top: 15%;
+        }
+
+        .list_1 {
+            list-style-type: square;
+        }
+
+        .red_btn {
+            border: 1px solid green;
+            background-color: purple;
+            color:white;
+            font-weight: 900;
+            padding: 5px;
+            width: auto;
+        }
+
+        .navbar-toggler{
+          width: 47px;
+          height: 34px;
+          /*background-color: #7eb444*/;
+          }
+
+        .navbar-toggler .line{
+          width: 100%;
+          float: left;
+          height: 2px;
+          background-color: #fff;
+          margin-bottom: 5px;
+
+          }
+
+        .red_num {
+            font-size: 750%;
+            text-align: center;
+            color: purple;
+        }
+
+        .sec_text{
+          color:#555555;
+        }
+
+        .contactLink{
+          margin-top:35px;
+        }
+
+        .contactLink a{
+          border: 0px solid green;
+          background-color: #00b300;
+          color:white;
+          font-weight: bold;
+          padding: 10px;
+          text-decoration: none;
+          width: auto;
+        }
+
+        .contactLink a:hover{
+          background-color: #1aff1a;
+        }
+
+        .contactBtn{
+          margin-top:35px;
+        }
+
+        .contactBtn a{
+          border: 0px solid green;
+          background-color: #00b300;
+          color:white;
+          font-weight: bold;
+          padding: 10px;
+          text-decoration: none;
+          width: auto;
+        }
+
+        .contactBtn a:hover{
+          background-color: #1aff1a;
+        }
+
+       
+  </style>
+  <title>GreenCheque &#8211; GreenCheque</title>
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="GreenCheque &raquo; Feed" href="https://greencheque.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="GreenCheque &raquo; Comments Feed" href="https://greencheque.com/comments/feed/" />
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/greencheque.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://greencheque.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6.2' media='all' />
+<link rel='stylesheet' id='twentytwenty-style-css'  href='https://greencheque.com/wp-content/themes/TextureBaker_Release/style.css?ver=0.0.1' media='all' />
+<style id='twentytwenty-style-inline-css'>
+.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #cd2653; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #cd2653; }button,.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #cd2653; }.fill-children-accent,.fill-children-accent * { fill: #cd2653; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #6d6d6d; }:root .has-secondary-background-color { background-color: #6d6d6d; }pre,fieldset,input,textarea,table,table *,hr { border-color: #dcd7ca; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #dcd7ca; }.wp-block-table.is-style-stripes { border-bottom-color: #dcd7ca; }.wp-block-latest-posts.is-grid li { border-top-color: #dcd7ca; }:root .has-subtle-background-color { color: #dcd7ca; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #cd2653; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #cd2653; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #000000; }body:not(.overlay-header) .primary-menu ul { background-color: #000000; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #000000; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #000000; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #6d6d6d; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #dcd7ca; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #dcd7ca; }
+</style>
+<link rel='stylesheet' id='twentytwenty-print-style-css'  href='https://greencheque.com/wp-content/themes/twentytwenty/print.css?ver=0.0.1' media='print' />
+<script src='https://greencheque.com/wp-content/themes/twentytwenty/assets/js/index.js?ver=0.0.1' id='twentytwenty-js-js' async></script>
+<link rel="https://api.w.org/" href="https://greencheque.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://greencheque.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://greencheque.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.2" />
+	<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
+	<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+
+<body class="bg-white">
+  
+      
+
+  <nav class="navbar navbar-expand-md bg-success navbar-dark">
+  <div class="container-fluid">
+      <a class="navbar-brand text-white" style="font-size:150%;" href=https://greencheque.com>GreenCheque</a>      
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="line"></span> 
+        <span class="line"></span> 
+        <span class="line"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+            <a class="nav-link text-white" style="font-size:120%" href="red_login">Login</a>
+          </li>      
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="container mb-5">
+        <div class="row red_col mt-5" style="background-color:#ffffff">
+            <div class="col-md-6 mb-5 red_col">
+                <div class="divdiv">
+                    <div>
+                        <h3 class="sec_text">EXPAND YOUR REACH</h3>
+                    </div>
+                    <div class="div_h1">
+                        Let your customers pay from wherever they are
+                    </div>
+                    <div class="div_txt">
+                        <h5 class="sec_text">Expand your business to serve far away customers,
+                            create and send an invoice then collect payment from
+                            your customers wherever they are in the world.
+                        </h5>
+                    </div>
+                    <div class ="contactBtn">
+                        <a href=https://greencheque.com/contact > Contact us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-5 red_col">
+              <img
+               src="https://grtechventures.com/wp-content/uploads/2020/06/woman-working-macbook-laptop_b.png"
+                class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+            </div>
+        </div>
+        <div class="row red_col mt-5" style="background-color:#ffffff">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100 border-0">
+                    <div class="card-img-top">
+                        <img  class="mx-auto d-block"
+                        src="https://grtechventures.com/wp-content/uploads/2020/06/lock_b_clipArt.png" alt=""
+                        height="187" width="200">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Secured</h4>
+                        <p class="card-text">Built on the platform provided by
+                            the major finacial institutions
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class ="contactBtn d-none d-md-block">
+                            <a href=https://greencheque.com/contact >Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100 border-0">
+                    <div class="card-img-top">
+                        <img  class="mx-auto d-block"
+                        src="https://grtechventures.com/wp-content/uploads/2020/06/fast_ca.png" alt=""
+                        height="187" width="200">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Quick</h4>
+                        <p class="card-text">Recieve payment within
+                            minutes directly to your business account
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="d-block d-md-none">
+                            <div class ="contactBtn d-none d-md-block">
+                                <a href=https://greencheque.com/contact >Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100 border-0">
+                    <div class="card-img-top">
+                        <img  class="mx-auto d-block"
+                        src="https://grtechventures.com/wp-content/uploads/2020/06/gears_ca.png" alt=""
+                        height="187" width="200">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Efficient</h4>
+                        <p class="card-text">Built on the platform provided by the major finacial institutions
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="d-block d-md-none">
+                            <div class ="contactBtn">
+                                <a href=https://greencheque.com/contact >Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5 mt-5">
+            <div class="col text-center">
+                <h2>Three easy steps </h2>
+            </div>
+        </div>
+        <div class="row red_col" style="background-color:ffffff;">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100 border-0">
+                    <div class="red_num">1</div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center"> Take Customer's Order</h4>
+                        <p class="card-text">Built on the platform provided by
+                            the major finacial institutions
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class ="contactBtn d-none d-md-block">
+                            <a href=https://greencheque.com/contact >Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100 border-0">
+                    <div class="red_num">2</div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Request Payment</h4>
+                        <p class="card-text">Send email to customer with
+                            invoice details and payment link</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="d-block d-md-none">
+                            <div class ="contactBtn d-none d-md-block">
+                                <a href=https://greencheque.com/contact >Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100 border-0">
+                    <div class="red_num">3</div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Collect</h4>
+                        <p class="card-text">Your customer pays and the money
+                            is in your account in minutes</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class ="contactBtn">
+                            <div class="d-block d-md-none">
+                                <a href=https://greencheque.com/contact >Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5" style="background-color:eeeeee;">
+            <div class="col-md-6 mb-5">
+                <div class="divdiv">
+                    <div class="div_txt">
+                        <h2>There is no limit to your reach</h2>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <ul class="list_a">
+                            <li>
+                                <h4>Collect payments without customers coming in</h4>
+                            </li>
+                            <li>
+                                <h4>Collect payments from customers in another parish</h4>
+                            </li>
+                            <li>
+                                <h4>Collect payments from customers around the globe</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contactLink">
+                        <div class ="contactBtn">
+                            <a href=https://greencheque.com/contact >Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-5">
+            <img
+               src="https://cdn.pixabay.com/photo/2016/02/03/03/23/international-space-station-1176518_960_720.jpg"
+                class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+            </div>
+        </div>
+    </div>
+
+
+<div class="container">
+<div class="row mt-5">
+	<div class="col-sm-1"></div>
+	<div class="col-sm-10">Copyright 2020 Grassroots Technology Ventures Ltd</div>
+	<div class="col-sm-1"></div>
+</div>
+</div>
+
+<!-- <script src='https://greencheque.com/wp-includes/js/wp-embed.min.js?ver=5.6.2' id='wp-embed-js'></script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script> -->
+	
+	</body>
+</html>
+
+<!--Generated by Endurance Page Cache-->
+
