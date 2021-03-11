@@ -141,7 +141,7 @@ body {
     100%{transform: translate(270px,0px);}
 }
 /* ------------------------------------------------------------------------------------------------------- */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
     .scatter_list li:nth-child(1) {        
         transform: translate(0px,0px) rotate(0deg);
     }
