@@ -7,6 +7,58 @@ body {
     font-family:'IBM Plex Serif', serif !important;
 }
 
+ul.alis {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
+
+.contact_btn{
+    background-color: #00592b;
+    color: #f0f0f0;
+    border: 0;
+}
+
+.red_txta{
+    font-family: 'Syne Mono', monospace;
+    font-size: larger;
+    color: #0c4128;
+}
+
+.red_card_title{
+    color:#6f42c1;
+    
+}
+
+.red_lm_link{
+    text-decoration: none;
+    font-size: larger;
+}
+
+.red_lm_link_b{
+    text-decoration: none;
+}
+
+.red_sm_link{
+    text-decoration: none;
+    color:#f0f0f0;
+}
+.red_sm_link .bi:hover{
+    text-decoration: none;
+    color:purple;
+    font-weight: bold;
+}
+
+.red_more_toggle[aria-expanded=false] .bi-dash{
+    display: none;
+}
+
+.red_more_toggle[aria-expanded=true] .bi-plus{
+    display: none;
+}
+
+.red_mt_5{
+    margin-top: 140px;
+}
 .red_num {
     font-size: 750%;
     text-align: center;
@@ -14,7 +66,8 @@ body {
 }
 
 .red_s-h{
-    font-size: 340%;
+    /* margin-top: 40px; */
+    font-size: 240%;
     text-shadow: 0px 4px 3px #198754;
     text-shadow: 4px 4px 0px #198754, 2px 2px 2px #198754;
     position: relative;
@@ -201,5 +254,20 @@ body {
         color: #000000;
         background-color: white;
         transition: .8s;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+          .red_nav_item{
+        margin-top: 40px;
+        font-size: 150%;
+      }
+  }
+
+  @media (min-width: 768px) {
+    .collapse.dont-collapse-sm {
+      display: block;
+      height: auto !important;
+      visibility: visible;
     }
   }
