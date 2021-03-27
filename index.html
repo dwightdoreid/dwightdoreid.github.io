@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
@@ -30,6 +30,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .coin {
+            background-color: #ffed6c;
+            height: 30px;
+            width: 70px;
+            border: 6px solid #fcb741;
+            border-radius: 50%;
+        }
+
+        .red_mt_5 {
+            margin-top: 110px;
+        }
+
+        .red_sm_link {
+            text-decoration: none;
+            color: #f0f0f0;
+            transition: 0.5s;
+        }
+
+        .red_sm_link .bi {
+            transition: 0.2s;
+        }
+
+        .red_sm_link .bi:hover {
+            text-decoration: none;
+            color: purple;
+            font-weight: bold;
+        }
+
+        .red_fter_link {
+            text-decoration: none;
+            color: #f0f0f0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+            transition: 0.5s;
+        }
+
+        .red_fter_link:hover {
+            text-decoration: none;
+            border-bottom: 1px solid white;
+        }
+
+        .red_hder_link {
+            text-decoration: none;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .red_hder_link:hover {
+            color: purple;
+        }
+    </style>
 </head>
 
 <body class="bg-white">
@@ -47,10 +109,10 @@
             <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
                 <ul class="navbar-nav mb-1">
                     <li class="nav-item red_nav_item">
-                        <a class=" nav-link text-white" href="https://greencheque.com/pricing">Pricing</a>
+                        <a class="nav-link" href="https://greencheque.com/pricing">Pricing</a>
                     </li>
                     <li class="nav-item red_nav_item">
-                        <a class=" nav-link text-white" href="https://greencheque.com/login">Login</a>
+                        <a class="nav-link" href="https://greencheque.com/login">Login</a>
                     </li>
                     <li class="nav-item red_nav_item">
                         <a href=https://greencheque.com/contact
@@ -95,8 +157,11 @@
                     </h5>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <h1>Money grow animation</h1>
+            <div id="mng_div" class="col-sm-4">
+                <!-- <h1>Money grow animation</h1> -->
+                <!-- <div id="money_grow"></div>
+                <div class="coin"></div> -->
+                <canvas id="money_grow" width="100%" height="100" style="border:1px solid #ff0000;"></canvas>
             </div>
         </div>
         <!-- ---------------------------------------------------------------------------------------------------------------- -->
@@ -106,7 +171,8 @@
             </div>
             <div class="col-sm-6 mt-5 text-center">
                 <h2 class="mb-5">You can get started right now for free</h2>
-                <a href=https://greencheque.com/contact class="btn btn-success btn-lg contact_btn mt-5 text-white" type="button">
+                <a href=https://greencheque.com/contact class="btn btn-success btn-lg contact_btn mt-5 text-white"
+                    type="button">
                     Start your free trial today</a>
                 <div class="mt-3">
                     Try GreenCheque free for a promotional period of 3 months, no credit card required.
@@ -285,20 +351,20 @@
             <!-- Links -->
             <ul class="navbar-nav ">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">About</a>
+                    <a class="nav-link text-white red_fter_link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Press and Media</a>
+                    <a class="nav-link text-white red_fter_link" href="#">Press and Media</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Pricing</a>
+                    <a class="nav-link text-white red_fter_link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Sitemap</a>
+                    <a class="nav-link text-white red_fter_link" href="#">Sitemap</a>
                 </li>
             </ul>
         </nav>
-        <div class="row mt-5 pt-3">
+        <div class="row mt-5 py-3">
             <div class="col-2">
                 <a class="red_sm_link fs-2 ms-5" href="https://www.instagram.com/green_cheque/">
                     <i class="bi bi-instagram"></i>
@@ -313,8 +379,55 @@
                 Ventures Ltd</div>
         </div>
     </div>
-    <!-- </div>
-    </div> -->
+
+    <script>
+        var mng_div = document.getElementById("mng_div");
+        var h = mng_div.offsetHeight;
+        var w = mng_div.offsetWidth;
+        var c = document.getElementById("money_grow");
+        c.width = w;
+        c.height = h;
+        var ctx = c.getContext("2d");
+        ctx.scale(1, 0.40);
+        
+        class Coin {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+            }
+            render() {                
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, 40, 0, 2 * Math.PI);
+                ctx.strokeStyle = "#fcb741";
+                ctx.lineWidth = 20;
+                ctx.fillStyle = "#ffed6c";
+                ctx.stroke();
+                ctx.fill();
+            }
+        }
+
+        function moneyGrow() {
+            var cnt = 0;
+            var hh = h;
+            var cn = new Coin(50,h);
+            cn.render();
+            setInterval(()=>{
+                hh = hh*0.95;
+                cn.y = hh;
+                cn.render();
+                cnt++;
+                if(cnt==10){
+                    c.height = h;
+                    ctx.scale(1, 0.40);
+                    hh = h;
+                    cnt = 0;
+                }
+            },1000);
+        }
+
+        moneyGrow();
+
+    </script>
 </body>
 
 </html>
