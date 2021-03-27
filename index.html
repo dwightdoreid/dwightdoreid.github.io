@@ -91,6 +91,10 @@
         .red_hder_link:hover {
             color: purple;
         }
+
+        .red-space-div {
+            padding-bottom: 100px;
+        }
     </style>
 </head>
 
@@ -134,12 +138,12 @@
                 </figcaption>
             </figure>
         </div>
-        <div class="row p-0" style="background-color: #0e1318;">
-            <img class="p-0 m-0" style="width: 100%;" src="top-backdrop.jpg" alt="top-backdrop">
+        <div class="row pb-5" style="background-color: #0e1318;">
+            <img class="p-0 m-0 img-fluid" style="width: 100%;" src="top-backdrop.jpg" alt="top-backdrop">
             <div class="pb-5 mt-0 red-space-div" style="background-color: #0e1318;"></div>
         </div>
         <!-- ---------------------------------------------------------------------------------------------------------------- -->
-        <div class="row mb-5 " style="background-color:#293039; padding:20px;">
+        <div class="row mb-5" style="background-color:#293039; padding:20px;">
             <div class="col-sm-8" style="min-height:70vh; border-right:5px solid white;">
                 <div class="row mt-5">
                     <h2 style="color:#198754;">About the Company</h2>
@@ -161,7 +165,7 @@
                 <!-- <h1>Money grow animation</h1> -->
                 <!-- <div id="money_grow"></div>
                 <div class="coin"></div> -->
-                <canvas id="money_grow" width="100%" height="100" style="border:1px solid #ff0000;"></canvas>
+                <canvas id="money_grow" width="100%" height="100" style="border:0px solid #ff0000;"></canvas>
             </div>
         </div>
         <!-- ---------------------------------------------------------------------------------------------------------------- -->
@@ -387,7 +391,7 @@
         var h;
         var w;
         console.log(mng_div.offsetHeight)
-        
+
         var ctx = c.getContext("2d");
 
         class Coin {
@@ -418,20 +422,25 @@
 
         function moneyGrow() {
             var cnt = 0;
-            var hh = mng_div.offsetHeight*2;
-            var cn = new Coin(50, hh);
-            var cn2 = new Coin(120, hh+40);
-            setInterval(() => {
-                hh = hh * 0.98;
-                cn.y = hh;
-                cn2.y = hh+80;
-                cn.render();
-                cn2.render();
+            var hh = mng_div.offsetHeight * 2;
+            var cn = new Coin(w / 2, hh);
+            var cn2 = new Coin(120, hh + 40);
+            setInterval(() => {                
                 cnt++;
-                if (cnt == 30) {
+                if (cnt < 30) {
+                    hh = hh * 0.98;
+                    cn.y = hh;
+                    cn2.y = hh + 80;
+                    cn.render();
+                    cn2.render();
+                }
+                if ((cnt > 50)&(cnt < 50)) {
+                    c.scale(0.5, 0.5);
+                }
+                if (cnt == 60) {
                     c.height = c.height;
                     ctx.scale(1, 0.40);
-                    hh = mng_div.offsetHeight*2;
+                    hh = mng_div.offsetHeight * 2;
                     cnt = 0;
                 }
             }, 100);
