@@ -94,7 +94,7 @@
     </style>
 </head>
 
-<body class="bg-white">
+<body class="bg-white" onresize="initMoneyGrow()">
     <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://greencheque.com">
@@ -157,7 +157,7 @@
                     </h5>
                 </div>
             </div>
-            <div id="mng_div" class="col-sm-4">
+            <div id="mng_div" style="min-height: 50vh;" class="col-sm-4" style="border:2px solid #ffff00;">
                 <!-- <h1>Money grow animation</h1> -->
                 <!-- <div id="money_grow"></div>
                 <div class="coin"></div> -->
@@ -382,20 +382,20 @@
 
     <script>
         var mng_div = document.getElementById("mng_div");
-        var h = mng_div.offsetHeight;
-        var w = mng_div.offsetWidth;
         var c = document.getElementById("money_grow");
-        c.width = w;
-        c.height = h;
         var ctx = c.getContext("2d");
-        ctx.scale(1, 0.40);
+        var h;
+        var w;
+        console.log(mng_div.offsetHeight)
         
+        var ctx = c.getContext("2d");
+
         class Coin {
             constructor(x, y) {
                 this.x = x;
                 this.y = y;
             }
-            render() {                
+            render() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, 40, 0, 2 * Math.PI);
                 ctx.strokeStyle = "#fcb741";
@@ -406,27 +406,38 @@
             }
         }
 
-        function moneyGrow() {
-            var cnt = 0;
-            var hh = h;
-            var cn = new Coin(50,h);
-            cn.render();
-            setInterval(()=>{
-                hh = hh*0.95;
-                cn.y = hh;
-                cn.render();
-                cnt++;
-                if(cnt==10){
-                    c.height = h;
-                    ctx.scale(1, 0.40);
-                    hh = h;
-                    cnt = 0;
-                }
-            },1000);
+        function initMoneyGrow() {
+            console.log("resized")
+            var mng_div = document.getElementById("mng_div");
+            h = mng_div.offsetHeight;
+            w = mng_div.offsetWidth;
+            c.width = w;
+            c.height = h;
+            ctx.scale(1, 0.40);
         }
 
+        function moneyGrow() {
+            var cnt = 0;
+            var hh = mng_div.offsetHeight*2;
+            var cn = new Coin(50, hh);
+            var cn2 = new Coin(120, hh+40);
+            setInterval(() => {
+                hh = hh * 0.98;
+                cn.y = hh;
+                cn2.y = hh+80;
+                cn.render();
+                cn2.render();
+                cnt++;
+                if (cnt == 30) {
+                    c.height = c.height;
+                    ctx.scale(1, 0.40);
+                    hh = mng_div.offsetHeight*2;
+                    cnt = 0;
+                }
+            }, 100);
+        }
+        initMoneyGrow();
         moneyGrow();
-
     </script>
 </body>
 
